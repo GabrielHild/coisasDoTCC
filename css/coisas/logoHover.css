@@ -1,0 +1,26 @@
+.img{
+    display: inline-block;
+    color: transparent;
+    font-size: 50px;
+    transition: ease-in 0.28s;
+}
+.img:hover{
+    transition: ease-in 0.2s;
+    color: black;
+}
+
+
+img{
+    animation: spinner  0.3s linear;
+    transform: translate(-0px, +155px);
+    transition: ease-in 0.5s;
+}
+
+
+img:hover{
+    transform: translate(-0px, +30px);
+    transition: ease-out 0.5s;
+
+    transform: rotate(360deg)!important;
+    animation: spinner 0.3s linear;
+}
