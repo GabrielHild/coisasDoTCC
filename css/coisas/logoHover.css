@@ -2,7 +2,7 @@
     display: inline-block;
     color: transparent;
     font-size: 50px;
-    transition: ease-in 0.28s;
+    transition: ease-in 0.2s;
 }
 .img:hover{
     transition: ease-in 0.2s;
@@ -10,8 +10,18 @@
 }
 
 
-img{
-    animation: spinner  0.3s linear;
+
+img {   
+    transform-origin: center; 
+    transform: translateY(155px); 
+    transition: transform 0.5s ease-out;
+  }
+  
+  img:hover {
+    transition: ease-in .5s;
+    transform: translateY(30px) rotate(360deg);
+  }
+/* img{
     transform: translate(-0px, +155px);
     transition: ease-in 0.5s;
 }
@@ -21,6 +31,7 @@ img:hover{
     transform: translate(-0px, +30px);
     transition: ease-out 0.5s;
 
-    transform: rotate(360deg)!important;
-    animation: spinner 0.3s linear;
-}
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+} */
+
