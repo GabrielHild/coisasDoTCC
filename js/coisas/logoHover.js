@@ -11,7 +11,7 @@ let click = -1;
 function clicou() {
     click++
     if(click == 0){
-        img.style.transform="translateY(30px)";
+        img.style.transform="translateY(30px) rotate(360deg)";
         text.style.opacity = 1;
     }
     if(click == 1){
@@ -27,7 +27,7 @@ let passou = -1;
 function foi() {
     passou++
     if(passou == 0){
-        img.style.transform="translateY(30px)";
+        img.style.transform="translateY(30px) rotate(360deg)";
         text.style.opacity = 1;
     }
     if(passou == 1){
